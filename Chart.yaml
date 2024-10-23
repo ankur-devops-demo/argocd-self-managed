@@ -1,0 +1,9 @@
+apiVersion: v2
+name: argocd-self-managed
+description: Helm chart for installing argocd in a demo cluster
+type: application
+version: 0.1.0
+dependencies:
+  - name: argo-cd
+    repository: https://argoproj.github.io/argo-helm
+    version: 7.6.12
