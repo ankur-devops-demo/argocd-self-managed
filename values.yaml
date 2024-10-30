@@ -11,6 +11,8 @@ argo-cd:
   dex:
     enabled: true
   configs:
+    cm:
+      accounts.alice: apiKey, login
     rbac:
       policy.csv: |
         p, role:dev, applications, get, *, allow
@@ -19,4 +21,3 @@ argo-cd:
     secret:
       extra:
         alice.password: $2y$10$kfkliuFGuXYGds2W0xo/bOy1LM67bK3h/MP6qjd1Ul6HTBptQmgE.
-        alice.username: alice
