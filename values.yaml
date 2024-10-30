@@ -10,3 +10,13 @@ argo-cd:
         memory: 512Mi
   dex:
     enabled: true
+  configs:
+    rbac:
+      policy.csv: |
+        p, role:dev, applications, get, *, allow
+        p, role:dev, applications, sync, *, allow
+        g, alice, role:dev
+    secret:
+      extra:
+        alice.password: $2y$10$kfkliuFGuXYGds2W0xo/bOy1LM67bK3h/MP6qjd1Ul6HTBptQmgE.
+        alice.username: YWxpY2U=
