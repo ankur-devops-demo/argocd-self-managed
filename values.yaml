@@ -20,4 +20,4 @@ argo-cd:
         g, alice, role:dev
     secret:
       extra:
-        alice.password: $2y$10$kfkliuFGuXYGds2W0xo/bOy1LM67bK3h/MP6qjd1Ul6HTBptQmgE.
+        accounts.alice.password: $2y$10$kfkliuFGuXYGds2W0xo/bOy1LM67bK3h/MP6qjd1Ul6HTBptQmgE.
