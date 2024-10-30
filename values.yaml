@@ -19,4 +19,4 @@ argo-cd:
     secret:
       extra:
         alice.password: $2y$10$kfkliuFGuXYGds2W0xo/bOy1LM67bK3h/MP6qjd1Ul6HTBptQmgE.
-        alice.username: YWxpY2U=
+        alice.username: alice
